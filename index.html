@@ -20,16 +20,31 @@
 	
 	<style>
 		
-	  #menu-pane {
-		  width: 30%;
-		  float: left;
+	  /* Hide the menu-pane when on mobile */	 
+		@media screen and (max-width: 480px) {
+	      #menu-pane{
+			display: none;
 		  }
-	  
-	  #content-pane {
-			width: 70%;
-			height: 100%;
-			float: left;
-			text-align: center;
+
+		}
+		
+	  /* Hide Options button on tablet */
+		@media screen and (min-width: 481px) {
+		  #menu-pane {
+			  width: 30%;
+			  float: left;
+			  }
+	      
+	      #content-pane {
+				width: 70%;
+				height: 100%;
+				float: left;
+				text-align: center;
+			}
+			
+			#options-btn {
+					display: none;
+			}
 		}
 		
 	</style>
